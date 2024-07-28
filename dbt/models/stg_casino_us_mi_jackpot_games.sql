@@ -15,7 +15,7 @@ WITH last_record AS (
 
 SELECT
 
-	jg.game_id
+	jg.game_id as new_game_id
 	,jg.jackpot_id
 	,TIMESTAMP_MICROS(jg.inserted_at) AS _inserted_at
 	,TIMESTAMP_MICROS(jg.updated_at) AS date
